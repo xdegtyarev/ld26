@@ -1,0 +1,1411 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 3
+  m_Component:
+  - 4: {fileID: 400000}
+  - 114: {fileID: 11400000}
+  - 114: {fileID: 11400002}
+  m_Layer: 0
+  m_Name: AudioController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!1002 &100001
+EditorExtensionImpl:
+  serializedVersion: 6
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!1002 &400001
+EditorExtensionImpl:
+  serializedVersion: 6
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1669b0a062dc66842ab1bca41a93ebe4, type: 1}
+  m_Name: 
+  AudioObjectPrefab: {fileID: 100000, guid: 0c1c735ac5b98ad428f564386ebb50c9, type: 2}
+  UsePooledAudioObjects: 1
+  PlayWithZeroVolume: 0
+  musicCrossFadeTime: 2
+  AudioCategories:
+  - Name: Music
+    MaxSimultaniousSoundItems: 1
+    AudioObjectPrefab: {fileID: 100000, guid: 17e18717115f9430d8c4c6a4ab45acc5, type: 2}
+    AudioItems:
+    - Name: GameplayTheme
+      Loop: 1
+      DestroyOnLoad: 1
+      Volume: 1
+      FixedOrder: 0
+      RandomOrderStart: 1
+      MinTimeBetweenPlayCalls: .100000001
+      Delay: 0
+      PlayInstead: 
+      PlayAdditional: 
+      subItems:
+      - Clip: {fileID: 8300000, guid: f29d3b993576c46ffb1c19da9b3a6919, type: 1}
+        Volume: 1
+        Probability: 1
+        PitchShift: 0
+        Pan2D: 0
+        RandomPitch: 0
+        RandomVolume: 0
+        Delay: 0
+        OverrideClipLength: 0
+      - Clip: {fileID: 8300000, guid: 852a48b56053d467193dcd97ce87e42b, type: 1}
+        Volume: 1
+        Probability: 1
+        PitchShift: 0
+        Pan2D: 0
+        RandomPitch: 0
+        RandomVolume: 0
+        Delay: 0
+        OverrideClipLength: 0
+    - Name: MainMenuTheme
+      Loop: 1
+      DestroyOnLoad: 1
+      Volume: 1
+      FixedOrder: 0
+      RandomOrderStart: 1
+      MinTimeBetweenPlayCalls: .100000001
+      Delay: 0
+      PlayInstead: 
+      PlayAdditional: 
+      subItems:
+      - Clip: {fileID: 8300000, guid: d9c49f065c044478fb4d6feb7b49cb7f, type: 1}
+        Volume: 1
+        Probability: 1
+        PitchShift: 0
+        Pan2D: 0
+        RandomPitch: 0
+        RandomVolume: 0
+        Delay: 0
+        OverrideClipLength: 0
+    _volume: 1
+  - Name: SFX
+    MaxSimultaniousSoundItems: 10
+    AudioObjectPrefab: {fileID: 0}
+    AudioItems:
+    - Name: Match
+      Loop: 0
+      DestroyOnLoad: 1
+      Volume: 1
+      FixedOrder: 0
+      RandomOrderStart: 1
+      MinTimeBetweenPlayCalls: .100000001
+      Delay: 0
+      PlayInstead: 
+      PlayAdditional: 
+      subItems:
+      - Clip: {fileID: 8300000, guid: df6b83cdf4eb74a958c9b7d7e5a20844, type: 1}
+        Volume: 1
+        Probability: 1
+        PitchShift: 0
+        Pan2D: 0
+        RandomPitch: 0
+        RandomVolume: 0
+        Delay: 0
+        OverrideClipLength: 0
+    - Name: Achievement
+      Loop: 0
+      DestroyOnLoad: 1
+      Volume: 1
+      FixedOrder: 0
+      RandomOrderStart: 1
+      MinTimeBetweenPlayCalls: .100000001
+      Delay: 0
+      PlayInstead: 
+      PlayAdditional: 
+      subItems:
+      - Clip: {fileID: 8300000, guid: 04d7ca2ec0da84c9fa26d803e6e72d66, type: 1}
+        Volume: 1
+        Probability: 1
+        PitchShift: 0
+        Pan2D: 0
+        RandomPitch: 0
+        RandomVolume: 0
+        Delay: 0
+        OverrideClipLength: 0
+    - Name: BrokenTile
+      Loop: 0
+      DestroyOnLoad: 1
+      Volume: 1
+      FixedOrder: 0
+      RandomOrderStart: 1
+      MinTimeBetweenPlayCalls: .100000001
+      Delay: 0
+      PlayInstead: 
+      PlayAdditional: 
+      subItems:
+      - Clip: {fileID: 8300000, guid: f318b1f74e7b94e6b90421331eaae769, type: 1}
+        Volume: 1
+        Probability: 1
+        PitchShift: 0
+        Pan2D: 0
+        RandomPitch: 0
+        RandomVolume: 0
+        Delay: 0
+        OverrideClipLength: 0
+    - Name: ButtonTap
+      Loop: 0
+      DestroyOnLoad: 1
+      Volume: 1
+      FixedOrder: 0
+      RandomOrderStart: 1
+      MinTimeBetweenPlayCalls: .100000001
+      Delay: 0
+      PlayInstead: 
+      PlayAdditional: 
+      subItems:
+      - Clip: {fileID: 8300000, guid: 18630801ee9ae47b4b5e952621e5ef8f, type: 1}
+        Volume: 1
+        Probability: 1
+        PitchShift: 0
+        Pan2D: 0
+        RandomPitch: 0
+        RandomVolume: 0
+        Delay: 0
+        OverrideClipLength: 0
+    - Name: ChainX1
+      Loop: 0
+      DestroyOnLoad: 1
+      Volume: 1
+      FixedOrder: 0
+      RandomOrderStart: 1
+      MinTimeBetweenPlayCalls: .100000001
+      Delay: 0
+      PlayInstead: 
+      PlayAdditional: 
+      subItems:
+      - Clip: {fileID: 8300000, guid: cde8f7c7a19e74de696cfaba0cb4f4de, type: 1}
+        Volume: 1
+        Probability: 1
+        PitchShift: 0
+        Pan2D: 0
+        RandomPitch: 0
+        RandomVolume: 0
+        Delay: 0
+        OverrideClipLength: 0
+    - Name: ChainX2
+      Loop: 0
+      DestroyOnLoad: 1
+      Volume: 1
+      FixedOrder: 0
+      RandomOrderStart: 1
+      MinTimeBetweenPlayCalls: .100000001
+      Delay: 0
+      PlayInstead: 
+      PlayAdditional: 
+      subItems:
+      - Clip: {fileID: 8300000, guid: c37733224872b40aa9f1bc3b55c0b94f, type: 1}
+        Volume: 1
+        Probability: 1
+        PitchShift: 0
+        Pan2D: 0
+        RandomPitch: 0
+        RandomVolume: 0
+        Delay: 0
+        OverrideClipLength: 0
+    - Name: ChainX3
+      Loop: 0
+      DestroyOnLoad: 1
+      Volume: 1
+      FixedOrder: 0
+      RandomOrderStart: 1
+      MinTimeBetweenPlayCalls: .100000001
+      Delay: 0
+      PlayInstead: 
+      PlayAdditional: 
+      subItems:
+      - Clip: {fileID: 8300000, guid: c7cdc0dbd7ba14586bdf59e878bdd8a9, type: 1}
+        Volume: 1
+        Probability: 1
+        PitchShift: 0
+        Pan2D: 0
+        RandomPitch: 0
+        RandomVolume: 0
+        Delay: 0
+        OverrideClipLength: 0
+    - Name: ChestCollection
+      Loop: 0
+      DestroyOnLoad: 1
+      Volume: 1
+      FixedOrder: 0
+      RandomOrderStart: 1
+      MinTimeBetweenPlayCalls: .100000001
+      Delay: 0
+      PlayInstead: 
+      PlayAdditional: 
+      subItems:
+      - Clip: {fileID: 8300000, guid: 0121a6d437f7e4323a51e24e2f20cd7a, type: 1}
+        Volume: 1
+        Probability: 1
+        PitchShift: 0
+        Pan2D: 0
+        RandomPitch: 0
+        RandomVolume: 0
+        Delay: 0
+        OverrideClipLength: 0
+    - Name: ChestOpen
+      Loop: 0
+      DestroyOnLoad: 1
+      Volume: 1
+      FixedOrder: 0
+      RandomOrderStart: 1
+      MinTimeBetweenPlayCalls: .100000001
+      Delay: 0
+      PlayInstead: 
+      PlayAdditional: 
+      subItems:
+      - Clip: {fileID: 8300000, guid: c77daacd419324c8caa92316092cc798, type: 1}
+        Volume: 1
+        Probability: 1
+        PitchShift: 0
+        Pan2D: 0
+        RandomPitch: 0
+        RandomVolume: 0
+        Delay: 0
+        OverrideClipLength: 0
+    - Name: ComboX1
+      Loop: 0
+      DestroyOnLoad: 1
+      Volume: 1
+      FixedOrder: 0
+      RandomOrderStart: 1
+      MinTimeBetweenPlayCalls: .100000001
+      Delay: 0
+      PlayInstead: 
+      PlayAdditional: 
+      subItems:
+      - Clip: {fileID: 8300000, guid: 27b525776dd9342a2912d9ac6679cb90, type: 1}
+        Volume: 1
+        Probability: 1
+        PitchShift: 0
+        Pan2D: 0
+        RandomPitch: 0
+        RandomVolume: 0
+        Delay: 0
+        OverrideClipLength: 0
+    - Name: ComboX2
+      Loop: 0
+      DestroyOnLoad: 1
+      Volume: 1
+      FixedOrder: 0
+      RandomOrderStart: 1
+      MinTimeBetweenPlayCalls: .100000001
+      Delay: 0
+      PlayInstead: 
+      PlayAdditional: 
+      subItems:
+      - Clip: {fileID: 8300000, guid: 288d0237698b5425fa582bf86d437c3d, type: 1}
+        Volume: 1
+        Probability: 1
+        PitchShift: 0
+        Pan2D: 0
+        RandomPitch: 0
+        RandomVolume: 0
+        Delay: 0
+        OverrideClipLength: 0
+    - Name: ComboX3
+      Loop: 0
+      DestroyOnLoad: 1
+      Volume: 1
+      FixedOrder: 0
+      RandomOrderStart: 1
+      MinTimeBetweenPlayCalls: .100000001
+      Delay: 0
+      PlayInstead: 
+      PlayAdditional: 
+      subItems:
+      - Clip: {fileID: 8300000, guid: 23fc8cd33ff2142f9a504bd2ce9c91a5, type: 1}
+        Volume: 1
+        Probability: 1
+        PitchShift: 0
+        Pan2D: 0
+        RandomPitch: 0
+        RandomVolume: 0
+        Delay: 0
+        OverrideClipLength: 0
+    - Name: ErrorTap
+      Loop: 0
+      DestroyOnLoad: 1
+      Volume: 1
+      FixedOrder: 0
+      RandomOrderStart: 1
+      MinTimeBetweenPlayCalls: .100000001
+      Delay: 0
+      PlayInstead: 
+      PlayAdditional: 
+      subItems:
+      - Clip: {fileID: 8300000, guid: 62a8e13004c804311a9a3fd7388759b6, type: 1}
+        Volume: 1
+        Probability: 1
+        PitchShift: 0
+        Pan2D: 0
+        RandomPitch: 0
+        RandomVolume: 0
+        Delay: 0
+        OverrideClipLength: 0
+    - Name: Freeze
+      Loop: 0
+      DestroyOnLoad: 1
+      Volume: 1
+      FixedOrder: 0
+      RandomOrderStart: 1
+      MinTimeBetweenPlayCalls: .100000001
+      Delay: 0
+      PlayInstead: 
+      PlayAdditional: 
+      subItems:
+      - Clip: {fileID: 8300000, guid: 54f58fa97e32143909bd4bd037679e75, type: 1}
+        Volume: 1
+        Probability: 1
+        PitchShift: 0
+        Pan2D: 0
+        RandomPitch: 0
+        RandomVolume: 0
+        Delay: 0
+        OverrideClipLength: 0
+    - Name: LevelEnd
+      Loop: 0
+      DestroyOnLoad: 1
+      Volume: 1
+      FixedOrder: 0
+      RandomOrderStart: 1
+      MinTimeBetweenPlayCalls: .100000001
+      Delay: 0
+      PlayInstead: 
+      PlayAdditional: 
+      subItems:
+      - Clip: {fileID: 8300000, guid: 8c479c03c893243f489b93e68f3af015, type: 1}
+        Volume: 1
+        Probability: 1
+        PitchShift: 0
+        Pan2D: 0
+        RandomPitch: 0
+        RandomVolume: 0
+        Delay: 0
+        OverrideClipLength: 0
+    - Name: LevelStart
+      Loop: 0
+      DestroyOnLoad: 1
+      Volume: 1
+      FixedOrder: 0
+      RandomOrderStart: 1
+      MinTimeBetweenPlayCalls: .100000001
+      Delay: 0
+      PlayInstead: 
+      PlayAdditional: 
+      subItems:
+      - Clip: {fileID: 8300000, guid: b8ed308c927ce42c7b892b9ad03b234a, type: 1}
+        Volume: 1
+        Probability: 1
+        PitchShift: 0
+        Pan2D: 0
+        RandomPitch: 0
+        RandomVolume: 0
+        Delay: 0
+        OverrideClipLength: 0
+    - Name: MonsterAngry
+      Loop: 0
+      DestroyOnLoad: 1
+      Volume: 1
+      FixedOrder: 0
+      RandomOrderStart: 1
+      MinTimeBetweenPlayCalls: .100000001
+      Delay: 0
+      PlayInstead: 
+      PlayAdditional: 
+      subItems:
+      - Clip: {fileID: 8300000, guid: c45b0c9aef16640a5a785f62dcbd2fa3, type: 1}
+        Volume: 1
+        Probability: 1
+        PitchShift: 0
+        Pan2D: 0
+        RandomPitch: 0
+        RandomVolume: 0
+        Delay: 0
+        OverrideClipLength: 0
+    - Name: MonsterDeath
+      Loop: 0
+      DestroyOnLoad: 1
+      Volume: 1
+      FixedOrder: 0
+      RandomOrderStart: 1
+      MinTimeBetweenPlayCalls: .100000001
+      Delay: 0
+      PlayInstead: 
+      PlayAdditional: 
+      subItems:
+      - Clip: {fileID: 8300000, guid: e8fff8dd28f854c5ba03afc3fd469723, type: 1}
+        Volume: 1
+        Probability: 1
+        PitchShift: 0
+        Pan2D: 0
+        RandomPitch: 0
+        RandomVolume: 0
+        Delay: 0
+        OverrideClipLength: 0
+    - Name: MonsterMutter
+      Loop: 0
+      DestroyOnLoad: 1
+      Volume: 1
+      FixedOrder: 0
+      RandomOrderStart: 1
+      MinTimeBetweenPlayCalls: .100000001
+      Delay: 0
+      PlayInstead: 
+      PlayAdditional: 
+      subItems:
+      - Clip: {fileID: 8300000, guid: f64db003c2cc646298a17525108c64d5, type: 1}
+        Volume: 1
+        Probability: 1
+        PitchShift: 0
+        Pan2D: 0
+        RandomPitch: 0
+        RandomVolume: 0
+        Delay: 0
+        OverrideClipLength: 0
+    - Name: MonsterRespawn
+      Loop: 0
+      DestroyOnLoad: 1
+      Volume: 1
+      FixedOrder: 0
+      RandomOrderStart: 1
+      MinTimeBetweenPlayCalls: .100000001
+      Delay: 0
+      PlayInstead: 
+      PlayAdditional: 
+      subItems:
+      - Clip: {fileID: 8300000, guid: bfa42d6b46edf4c74874a486752bdf08, type: 1}
+        Volume: 1
+        Probability: 1
+        PitchShift: 0
+        Pan2D: 0
+        RandomPitch: 0
+        RandomVolume: 0
+        Delay: 0
+        OverrideClipLength: 0
+    - Name: MonsterWalk
+      Loop: 0
+      DestroyOnLoad: 1
+      Volume: 1
+      FixedOrder: 0
+      RandomOrderStart: 1
+      MinTimeBetweenPlayCalls: .100000001
+      Delay: 0
+      PlayInstead: 
+      PlayAdditional: 
+      subItems:
+      - Clip: {fileID: 8300000, guid: 1648bc8073a72493b8160eb778a59f23, type: 1}
+        Volume: 1
+        Probability: 1
+        PitchShift: 0
+        Pan2D: 0
+        RandomPitch: 0
+        RandomVolume: 0
+        Delay: 0
+        OverrideClipLength: 0
+    - Name: Moving
+      Loop: 0
+      DestroyOnLoad: 1
+      Volume: 1
+      FixedOrder: 0
+      RandomOrderStart: 1
+      MinTimeBetweenPlayCalls: .100000001
+      Delay: 0
+      PlayInstead: 
+      PlayAdditional: 
+      subItems:
+      - Clip: {fileID: 8300000, guid: 8bebbb437d8cd40249402867eb9a1a4c, type: 1}
+        Volume: 1
+        Probability: 1
+        PitchShift: 0
+        Pan2D: 0
+        RandomPitch: 0
+        RandomVolume: 0
+        Delay: 0
+        OverrideClipLength: 0
+    - Name: Respawn
+      Loop: 0
+      DestroyOnLoad: 1
+      Volume: 1
+      FixedOrder: 0
+      RandomOrderStart: 1
+      MinTimeBetweenPlayCalls: .100000001
+      Delay: 0
+      PlayInstead: 
+      PlayAdditional: 
+      subItems:
+      - Clip: {fileID: 8300000, guid: 7b45e5241ecfc4567a7242e45d4681c5, type: 1}
+        Volume: 1
+        Probability: 1
+        PitchShift: 0
+        Pan2D: 0
+        RandomPitch: 0
+        RandomVolume: 0
+        Delay: 0
+        OverrideClipLength: 0
+    - Name: TileTap
+      Loop: 0
+      DestroyOnLoad: 1
+      Volume: 1
+      FixedOrder: 0
+      RandomOrderStart: 1
+      MinTimeBetweenPlayCalls: .100000001
+      Delay: 0
+      PlayInstead: 
+      PlayAdditional: 
+      subItems:
+      - Clip: {fileID: 8300000, guid: c55b6b1addf6548b0940c5be33e2baaa, type: 1}
+        Volume: 1
+        Probability: 1
+        PitchShift: 0
+        Pan2D: 0
+        RandomPitch: 0
+        RandomVolume: 0
+        Delay: 0
+        OverrideClipLength: 0
+    - Name: Tooltip
+      Loop: 0
+      DestroyOnLoad: 1
+      Volume: 1
+      FixedOrder: 0
+      RandomOrderStart: 1
+      MinTimeBetweenPlayCalls: .100000001
+      Delay: 0
+      PlayInstead: 
+      PlayAdditional: 
+      subItems:
+      - Clip: {fileID: 8300000, guid: b89741049b3004e9c8d0f3d740ee94eb, type: 1}
+        Volume: 1
+        Probability: 1
+        PitchShift: 0
+        Pan2D: 0
+        RandomPitch: 0
+        RandomVolume: 0
+        Delay: 0
+        OverrideClipLength: 0
+    - Name: StartAbilityLightning
+      Loop: 0
+      DestroyOnLoad: 1
+      Volume: 1
+      FixedOrder: 0
+      RandomOrderStart: 1
+      MinTimeBetweenPlayCalls: .100000001
+      Delay: 0
+      PlayInstead: 
+      PlayAdditional: 
+      subItems:
+      - Clip: {fileID: 8300000, guid: 607b598f651b3448db89e37512acb5a1, type: 1}
+        Volume: 1
+        Probability: 1
+        PitchShift: 0
+        Pan2D: 0
+        RandomPitch: 0
+        RandomVolume: 0
+        Delay: 0
+        OverrideClipLength: 0
+    - Name: CantMoveTap
+      Loop: 0
+      DestroyOnLoad: 1
+      Volume: 1
+      FixedOrder: 0
+      RandomOrderStart: 1
+      MinTimeBetweenPlayCalls: .100000001
+      Delay: 0
+      PlayInstead: 
+      PlayAdditional: 
+      subItems:
+      - Clip: {fileID: 8300000, guid: 06564c3ba0a0649fdb7fa14ba07ef317, type: 1}
+        Volume: 1
+        Probability: 1
+        PitchShift: 0
+        Pan2D: 0
+        RandomPitch: 0
+        RandomVolume: 0
+        Delay: 0
+        OverrideClipLength: 0
+    - Name: StartAbilityJoker
+      Loop: 0
+      DestroyOnLoad: 1
+      Volume: 1
+      FixedOrder: 0
+      RandomOrderStart: 1
+      MinTimeBetweenPlayCalls: .100000001
+      Delay: 0
+      PlayInstead: 
+      PlayAdditional: 
+      subItems:
+      - Clip: {fileID: 8300000, guid: 973292aef29224902815f46b87595f19, type: 1}
+        Volume: 1
+        Probability: 1
+        PitchShift: 0
+        Pan2D: 0
+        RandomPitch: 0
+        RandomVolume: 0
+        Delay: 0
+        OverrideClipLength: 0
+    - Name: StartAbilityFavorite
+      Loop: 0
+      DestroyOnLoad: 1
+      Volume: 1
+      FixedOrder: 0
+      RandomOrderStart: 1
+      MinTimeBetweenPlayCalls: .100000001
+      Delay: 0
+      PlayInstead: 
+      PlayAdditional: 
+      subItems:
+      - Clip: {fileID: 8300000, guid: 5bf116646296b4f47a84c71c82a8287f, type: 1}
+        Volume: 1
+        Probability: 1
+        PitchShift: 0
+        Pan2D: 0
+        RandomPitch: 0
+        RandomVolume: 0
+        Delay: 0
+        OverrideClipLength: 0
+    - Name: ButtonTransitions
+      Loop: 0
+      DestroyOnLoad: 1
+      Volume: 1
+      FixedOrder: 0
+      RandomOrderStart: 1
+      MinTimeBetweenPlayCalls: .100000001
+      Delay: 0
+      PlayInstead: 
+      PlayAdditional: 
+      subItems:
+      - Clip: {fileID: 8300000, guid: b98520cee1aed419cb4bb284b396f2da, type: 1}
+        Volume: 1
+        Probability: 1
+        PitchShift: 0
+        Pan2D: 0
+        RandomPitch: 0
+        RandomVolume: 0
+        Delay: 0
+        OverrideClipLength: 0
+    - Name: StartAbilityRepair
+      Loop: 0
+      DestroyOnLoad: 1
+      Volume: 1
+      FixedOrder: 0
+      RandomOrderStart: 1
+      MinTimeBetweenPlayCalls: .100000001
+      Delay: 0
+      PlayInstead: 
+      PlayAdditional: 
+      subItems:
+      - Clip: {fileID: 8300000, guid: 8dd971ed0c73240478c8cf0a18504bb4, type: 1}
+        Volume: 1
+        Probability: 1
+        PitchShift: 0
+        Pan2D: 0
+        RandomPitch: 0
+        RandomVolume: 0
+        Delay: 0
+        OverrideClipLength: 0
+    - Name: HighScore
+      Loop: 0
+      DestroyOnLoad: 1
+      Volume: 1
+      FixedOrder: 0
+      RandomOrderStart: 1
+      MinTimeBetweenPlayCalls: .100000001
+      Delay: 0
+      PlayInstead: 
+      PlayAdditional: 
+      subItems:
+      - Clip: {fileID: 8300000, guid: 1e7472611e9b04fe5b2f4c6eb9f7ab4d, type: 1}
+        Volume: 1
+        Probability: 1
+        PitchShift: 0
+        Pan2D: 0
+        RandomPitch: 0
+        RandomVolume: 0
+        Delay: 0
+        OverrideClipLength: 0
+    - Name: StartAbilityBlast
+      Loop: 0
+      DestroyOnLoad: 1
+      Volume: 1
+      FixedOrder: 0
+      RandomOrderStart: 1
+      MinTimeBetweenPlayCalls: .100000001
+      Delay: 0
+      PlayInstead: 
+      PlayAdditional: 
+      subItems:
+      - Clip: {fileID: 8300000, guid: 18d1bf82b326e4161aa080efd8922f38, type: 1}
+        Volume: 1
+        Probability: 1
+        PitchShift: 0
+        Pan2D: 0
+        RandomPitch: 0
+        RandomVolume: 0
+        Delay: 0
+        OverrideClipLength: 0
+    - Name: MoveTap
+      Loop: 0
+      DestroyOnLoad: 1
+      Volume: 1
+      FixedOrder: 0
+      RandomOrderStart: 1
+      MinTimeBetweenPlayCalls: .100000001
+      Delay: 0
+      PlayInstead: 
+      PlayAdditional: 
+      subItems:
+      - Clip: {fileID: 8300000, guid: 7f156d4f1724842dd92865ef02319c9f, type: 1}
+        Volume: 1
+        Probability: 1
+        PitchShift: 0
+        Pan2D: 0
+        RandomPitch: 0
+        RandomVolume: 0
+        Delay: 0
+        OverrideClipLength: 0
+    - Name: SelectFigure
+      Loop: 0
+      DestroyOnLoad: 1
+      Volume: 1
+      FixedOrder: 0
+      RandomOrderStart: 1
+      MinTimeBetweenPlayCalls: .100000001
+      Delay: 0
+      PlayInstead: 
+      PlayAdditional: 
+      subItems:
+      - Clip: {fileID: 8300000, guid: 8a4b0e0017ac944a4819a72fe4294e82, type: 1}
+        Volume: 1
+        Probability: 1
+        PitchShift: 0
+        Pan2D: 0
+        RandomPitch: 0
+        RandomVolume: 0
+        Delay: 0
+        OverrideClipLength: 0
+    _volume: 1
+  - Name: Voice
+    MaxSimultaniousSoundItems: 1
+    AudioObjectPrefab: {fileID: 100000, guid: 6d0b4ef40376f454f91304fc77a8a081, type: 2}
+    AudioItems:
+    - Name: GirlAbilityLightning
+      Loop: 0
+      DestroyOnLoad: 1
+      Volume: 1
+      FixedOrder: 0
+      RandomOrderStart: 1
+      MinTimeBetweenPlayCalls: .100000001
+      Delay: 0
+      PlayInstead: 
+      PlayAdditional: 
+      subItems:
+      - Clip: {fileID: 8300000, guid: ddd50162e164a477e9f1f34328b326a1, type: 1}
+        Volume: 1
+        Probability: 1
+        PitchShift: 0
+        Pan2D: 0
+        RandomPitch: 0
+        RandomVolume: 0
+        Delay: 0
+        OverrideClipLength: 0
+      - Clip: {fileID: 8300000, guid: 589e49cc18e4749d88b284e45f0d359d, type: 1}
+        Volume: 1
+        Probability: 1
+        PitchShift: 0
+        Pan2D: 0
+        RandomPitch: 0
+        RandomVolume: 0
+        Delay: 0
+        OverrideClipLength: 0
+      - Clip: {fileID: 8300000, guid: 44446a7cb400f44d49191e05009fd2ea, type: 1}
+        Volume: 1
+        Probability: 1
+        PitchShift: 0
+        Pan2D: 0
+        RandomPitch: 0
+        RandomVolume: 0
+        Delay: 0
+        OverrideClipLength: 0
+    - Name: GirlCollection
+      Loop: 0
+      DestroyOnLoad: 1
+      Volume: 1
+      FixedOrder: 0
+      RandomOrderStart: 1
+      MinTimeBetweenPlayCalls: .100000001
+      Delay: 0
+      PlayInstead: 
+      PlayAdditional: 
+      subItems:
+      - Clip: {fileID: 8300000, guid: 43767ed5d2de64f449b8d737e2e4cbff, type: 1}
+        Volume: 1
+        Probability: 1
+        PitchShift: 0
+        Pan2D: 0
+        RandomPitch: 0
+        RandomVolume: 0
+        Delay: 0
+        OverrideClipLength: 0
+    - Name: GirlQuestFinished
+      Loop: 0
+      DestroyOnLoad: 1
+      Volume: 1
+      FixedOrder: 0
+      RandomOrderStart: 1
+      MinTimeBetweenPlayCalls: .100000001
+      Delay: 0
+      PlayInstead: 
+      PlayAdditional: 
+      subItems:
+      - Clip: {fileID: 8300000, guid: ce8a4992724104b7fa77fb4534b7f206, type: 1}
+        Volume: 1
+        Probability: 1
+        PitchShift: 0
+        Pan2D: 0
+        RandomPitch: 0
+        RandomVolume: 0
+        Delay: 0
+        OverrideClipLength: 0
+    - Name: GirlTopScore
+      Loop: 0
+      DestroyOnLoad: 1
+      Volume: 1
+      FixedOrder: 0
+      RandomOrderStart: 1
+      MinTimeBetweenPlayCalls: .100000001
+      Delay: 0
+      PlayInstead: 
+      PlayAdditional: 
+      subItems:
+      - Clip: {fileID: 8300000, guid: 9ca33e3f151244028b6232ba361c11ef, type: 1}
+        Volume: 1
+        Probability: 1
+        PitchShift: 0
+        Pan2D: 0
+        RandomPitch: 0
+        RandomVolume: 0
+        Delay: 0
+        OverrideClipLength: 0
+    - Name: GirlChest
+      Loop: 0
+      DestroyOnLoad: 1
+      Volume: 1
+      FixedOrder: 0
+      RandomOrderStart: 1
+      MinTimeBetweenPlayCalls: .100000001
+      Delay: 0
+      PlayInstead: 
+      PlayAdditional: 
+      subItems:
+      - Clip: {fileID: 8300000, guid: 0322e8eea2aa94bffa26f1b785d7a4dd, type: 1}
+        Volume: 1
+        Probability: 1
+        PitchShift: 0
+        Pan2D: 0
+        RandomPitch: 0
+        RandomVolume: 0
+        Delay: 0
+        OverrideClipLength: 0
+      - Clip: {fileID: 8300000, guid: 9fa6fce672ef44c6eafa0dbbd9e59ad7, type: 1}
+        Volume: 1
+        Probability: 1
+        PitchShift: 0
+        Pan2D: 0
+        RandomPitch: 0
+        RandomVolume: 0
+        Delay: 0
+        OverrideClipLength: 0
+      - Clip: {fileID: 8300000, guid: 045058849a5f949009ce463e4482146f, type: 1}
+        Volume: 1
+        Probability: 1
+        PitchShift: 0
+        Pan2D: 0
+        RandomPitch: 0
+        RandomVolume: 0
+        Delay: 0
+        OverrideClipLength: 0
+    - Name: GirlSessionEnd
+      Loop: 0
+      DestroyOnLoad: 1
+      Volume: 1
+      FixedOrder: 0
+      RandomOrderStart: 1
+      MinTimeBetweenPlayCalls: .100000001
+      Delay: 0
+      PlayInstead: 
+      PlayAdditional: 
+      subItems:
+      - Clip: {fileID: 8300000, guid: 373eeb7e51844460586dcc8eda3ceeec, type: 1}
+        Volume: 1
+        Probability: 1
+        PitchShift: 0
+        Pan2D: 0
+        RandomPitch: 0
+        RandomVolume: 0
+        Delay: 0
+        OverrideClipLength: 0
+      - Clip: {fileID: 8300000, guid: 21578add5ed4146089de7ac70a685aaf, type: 1}
+        Volume: 1
+        Probability: 1
+        PitchShift: 0
+        Pan2D: 0
+        RandomPitch: 0
+        RandomVolume: 0
+        Delay: 0
+        OverrideClipLength: 0
+      - Clip: {fileID: 8300000, guid: 3aeb1a9d1f63b4fcc9ed76b352e295e0, type: 1}
+        Volume: 1
+        Probability: 1
+        PitchShift: 0
+        Pan2D: 0
+        RandomPitch: 0
+        RandomVolume: 0
+        Delay: 0
+        OverrideClipLength: 0
+    - Name: GirlCombo
+      Loop: 0
+      DestroyOnLoad: 1
+      Volume: 1
+      FixedOrder: 0
+      RandomOrderStart: 1
+      MinTimeBetweenPlayCalls: .100000001
+      Delay: 0
+      PlayInstead: 
+      PlayAdditional: 
+      subItems:
+      - Clip: {fileID: 8300000, guid: 5e9e4bb89e7ba46c0aeb5f01f1c7e827, type: 1}
+        Volume: 1
+        Probability: 1
+        PitchShift: 0
+        Pan2D: 0
+        RandomPitch: 0
+        RandomVolume: 0
+        Delay: 0
+        OverrideClipLength: 0
+      - Clip: {fileID: 8300000, guid: 213fed50cbf9a494c9f8ef4cdba96d4e, type: 1}
+        Volume: 1
+        Probability: 1
+        PitchShift: 0
+        Pan2D: 0
+        RandomPitch: 0
+        RandomVolume: 0
+        Delay: 0
+        OverrideClipLength: 0
+    - Name: GirlAbilityTransform
+      Loop: 0
+      DestroyOnLoad: 1
+      Volume: 1
+      FixedOrder: 0
+      RandomOrderStart: 1
+      MinTimeBetweenPlayCalls: .100000001
+      Delay: 0
+      PlayInstead: 
+      PlayAdditional: 
+      subItems:
+      - Clip: {fileID: 8300000, guid: 911ed6de6b5db40a9a1f56587ad95f36, type: 1}
+        Volume: 1
+        Probability: 1
+        PitchShift: 0
+        Pan2D: 0
+        RandomPitch: 0
+        RandomVolume: 0
+        Delay: 0
+        OverrideClipLength: 0
+      - Clip: {fileID: 8300000, guid: 8ed3ffea7a3754edfa7a3895b3724729, type: 1}
+        Volume: 1
+        Probability: 1
+        PitchShift: 0
+        Pan2D: 0
+        RandomPitch: 0
+        RandomVolume: 0
+        Delay: 0
+        OverrideClipLength: 0
+      - Clip: {fileID: 8300000, guid: 47e47f874ef7741559a8dd59baa7900f, type: 1}
+        Volume: 1
+        Probability: 1
+        PitchShift: 0
+        Pan2D: 0
+        RandomPitch: 0
+        RandomVolume: 0
+        Delay: 0
+        OverrideClipLength: 0
+    - Name: GirlHappy
+      Loop: 0
+      DestroyOnLoad: 1
+      Volume: 1
+      FixedOrder: 0
+      RandomOrderStart: 1
+      MinTimeBetweenPlayCalls: .100000001
+      Delay: 0
+      PlayInstead: 
+      PlayAdditional: 
+      subItems:
+      - Clip: {fileID: 8300000, guid: 535e1cca8b6bb44e199ed66c2c8109da, type: 1}
+        Volume: 1
+        Probability: 1
+        PitchShift: 0
+        Pan2D: 0
+        RandomPitch: 0
+        RandomVolume: 0
+        Delay: 0
+        OverrideClipLength: 0
+      - Clip: {fileID: 8300000, guid: e827dbb9189474fd38b944f581f406c6, type: 1}
+        Volume: 1
+        Probability: 1
+        PitchShift: 0
+        Pan2D: 0
+        RandomPitch: 0
+        RandomVolume: 0
+        Delay: 0
+        OverrideClipLength: 0
+      - Clip: {fileID: 8300000, guid: a981d1205ec6d43c98a20fa61cbebb78, type: 1}
+        Volume: 1
+        Probability: 1
+        PitchShift: 0
+        Pan2D: 0
+        RandomPitch: 0
+        RandomVolume: 0
+        Delay: 0
+        OverrideClipLength: 0
+    - Name: GirlAbilityRepair
+      Loop: 0
+      DestroyOnLoad: 1
+      Volume: 1
+      FixedOrder: 0
+      RandomOrderStart: 1
+      MinTimeBetweenPlayCalls: .100000001
+      Delay: 0
+      PlayInstead: 
+      PlayAdditional: 
+      subItems:
+      - Clip: {fileID: 8300000, guid: c7b0f9520c2cd4895aa9c499f2b994c9, type: 1}
+        Volume: 1
+        Probability: 1
+        PitchShift: 0
+        Pan2D: 0
+        RandomPitch: 0
+        RandomVolume: 0
+        Delay: 0
+        OverrideClipLength: 0
+      - Clip: {fileID: 8300000, guid: c7fd84979bb4246b6b6d9e8c7dcba3e1, type: 1}
+        Volume: 1
+        Probability: 1
+        PitchShift: 0
+        Pan2D: 0
+        RandomPitch: 0
+        RandomVolume: 0
+        Delay: 0
+        OverrideClipLength: 0
+      - Clip: {fileID: 8300000, guid: 5a248d64587f74099829309d53ce3650, type: 1}
+        Volume: 1
+        Probability: 1
+        PitchShift: 0
+        Pan2D: 0
+        RandomPitch: 0
+        RandomVolume: 0
+        Delay: 0
+        OverrideClipLength: 0
+    - Name: GirlScared
+      Loop: 0
+      DestroyOnLoad: 1
+      Volume: 1
+      FixedOrder: 0
+      RandomOrderStart: 1
+      MinTimeBetweenPlayCalls: .100000001
+      Delay: 0
+      PlayInstead: 
+      PlayAdditional: 
+      subItems:
+      - Clip: {fileID: 8300000, guid: 9f34dfebb88234b7f907f12fd0e2dc6d, type: 1}
+        Volume: 1
+        Probability: 1
+        PitchShift: 0
+        Pan2D: 0
+        RandomPitch: 0
+        RandomVolume: 0
+        Delay: 0
+        OverrideClipLength: 0
+      - Clip: {fileID: 8300000, guid: 42948b4ef3eda4ae28d2684e0bfe421a, type: 1}
+        Volume: 1
+        Probability: 1
+        PitchShift: 0
+        Pan2D: 0
+        RandomPitch: 0
+        RandomVolume: 0
+        Delay: 0
+        OverrideClipLength: 0
+      - Clip: {fileID: 8300000, guid: c8c29212eb9ea4bee9fc001037792a8a, type: 1}
+        Volume: 1
+        Probability: 1
+        PitchShift: 0
+        Pan2D: 0
+        RandomPitch: 0
+        RandomVolume: 0
+        Delay: 0
+        OverrideClipLength: 0
+    - Name: GirlChain
+      Loop: 0
+      DestroyOnLoad: 1
+      Volume: 1
+      FixedOrder: 0
+      RandomOrderStart: 1
+      MinTimeBetweenPlayCalls: .100000001
+      Delay: 0
+      PlayInstead: 
+      PlayAdditional: 
+      subItems:
+      - Clip: {fileID: 8300000, guid: e9ab62e399ac44a6b85424cceb97a14b, type: 1}
+        Volume: 1
+        Probability: 1
+        PitchShift: 0
+        Pan2D: 0
+        RandomPitch: 0
+        RandomVolume: 0
+        Delay: 0
+        OverrideClipLength: 0
+      - Clip: {fileID: 8300000, guid: 08d29ae1f0df947dea03e2e3d01ee6b1, type: 1}
+        Volume: 1
+        Probability: 1
+        PitchShift: 0
+        Pan2D: 0
+        RandomPitch: 0
+        RandomVolume: 0
+        Delay: 0
+        OverrideClipLength: 0
+    - Name: GirlCannot
+      Loop: 0
+      DestroyOnLoad: 1
+      Volume: 1
+      FixedOrder: 0
+      RandomOrderStart: 1
+      MinTimeBetweenPlayCalls: .100000001
+      Delay: 0
+      PlayInstead: 
+      PlayAdditional: 
+      subItems:
+      - Clip: {fileID: 8300000, guid: de7115dbf303a49f186aa727f5368b61, type: 1}
+        Volume: 1
+        Probability: 1
+        PitchShift: 0
+        Pan2D: 0
+        RandomPitch: 0
+        RandomVolume: 0
+        Delay: 0
+        OverrideClipLength: 0
+      - Clip: {fileID: 8300000, guid: 0233d354ed0604ae6a1902c308509a8d, type: 1}
+        Volume: 1
+        Probability: 1
+        PitchShift: 0
+        Pan2D: 0
+        RandomPitch: 0
+        RandomVolume: 0
+        Delay: 0
+        OverrideClipLength: 0
+      - Clip: {fileID: 8300000, guid: 48b474c56f0ec41a7bca1da8afcc598b, type: 1}
+        Volume: 1
+        Probability: 1
+        PitchShift: 0
+        Pan2D: 0
+        RandomPitch: 0
+        RandomVolume: 0
+        Delay: 0
+        OverrideClipLength: 0
+    - Name: GirlAbilityGravity
+      Loop: 0
+      DestroyOnLoad: 1
+      Volume: 1
+      FixedOrder: 0
+      RandomOrderStart: 1
+      MinTimeBetweenPlayCalls: .100000001
+      Delay: 0
+      PlayInstead: 
+      PlayAdditional: 
+      subItems:
+      - Clip: {fileID: 8300000, guid: 1fe71743ca8334054960d76d2ab62bf9, type: 1}
+        Volume: 1
+        Probability: 1
+        PitchShift: 0
+        Pan2D: 0
+        RandomPitch: 0
+        RandomVolume: 0
+        Delay: 0
+        OverrideClipLength: 0
+      - Clip: {fileID: 8300000, guid: 530edb0f8bcff4d26a5fa4033e504cf7, type: 1}
+        Volume: 1
+        Probability: 1
+        PitchShift: 0
+        Pan2D: 0
+        RandomPitch: 0
+        RandomVolume: 0
+        Delay: 0
+        OverrideClipLength: 0
+      - Clip: {fileID: 8300000, guid: a04e2933ab5ed478485124fa3c608128, type: 1}
+        Volume: 1
+        Probability: 1
+        PitchShift: 0
+        Pan2D: 0
+        RandomPitch: 0
+        RandomVolume: 0
+        Delay: 0
+        OverrideClipLength: 0
+    - Name: GirlHi
+      Loop: 0
+      DestroyOnLoad: 1
+      Volume: 1
+      FixedOrder: 0
+      RandomOrderStart: 1
+      MinTimeBetweenPlayCalls: .100000001
+      Delay: 0
+      PlayInstead: 
+      PlayAdditional: 
+      subItems:
+      - Clip: {fileID: 8300000, guid: dfe7594056ebf4ec3b438c6fbcfaac69, type: 1}
+        Volume: 1
+        Probability: 1
+        PitchShift: 0
+        Pan2D: 0
+        RandomPitch: 0
+        RandomVolume: 0
+        Delay: 0
+        OverrideClipLength: 0
+    - Name: GirlMobRespawn
+      Loop: 0
+      DestroyOnLoad: 1
+      Volume: 1
+      FixedOrder: 0
+      RandomOrderStart: 1
+      MinTimeBetweenPlayCalls: .100000001
+      Delay: 0
+      PlayInstead: 
+      PlayAdditional: 
+      subItems:
+      - Clip: {fileID: 8300000, guid: b559460f8a3bb40feafb9116258fde4a, type: 1}
+        Volume: 1
+        Probability: 1
+        PitchShift: 0
+        Pan2D: 0
+        RandomPitch: 0
+        RandomVolume: 0
+        Delay: 0
+        OverrideClipLength: 0
+      - Clip: {fileID: 8300000, guid: 4df1862d389c74534bdb5f68e13a9779, type: 1}
+        Volume: 1
+        Probability: 1
+        PitchShift: 0
+        Pan2D: 0
+        RandomPitch: 0
+        RandomVolume: 0
+        Delay: 0
+        OverrideClipLength: 0
+      - Clip: {fileID: 8300000, guid: f38baff10f42147638c358bc1d8599ae, type: 1}
+        Volume: 1
+        Probability: 1
+        PitchShift: 0
+        Pan2D: 0
+        RandomPitch: 0
+        RandomVolume: 0
+        Delay: 0
+        OverrideClipLength: 0
+    - Name: GirlAbilityBlast
+      Loop: 0
+      DestroyOnLoad: 1
+      Volume: 1
+      FixedOrder: 0
+      RandomOrderStart: 1
+      MinTimeBetweenPlayCalls: .100000001
+      Delay: 0
+      PlayInstead: 
+      PlayAdditional: 
+      subItems:
+      - Clip: {fileID: 8300000, guid: 685a3061ac526425ab91086096cb73c7, type: 1}
+        Volume: 1
+        Probability: 1
+        PitchShift: 0
+        Pan2D: 0
+        RandomPitch: 0
+        RandomVolume: 0
+        Delay: 0
+        OverrideClipLength: 0
+      - Clip: {fileID: 8300000, guid: ffff5de2d653942e5b68f6dbd67a521c, type: 1}
+        Volume: 1
+        Probability: 1
+        PitchShift: 0
+        Pan2D: 0
+        RandomPitch: 0
+        RandomVolume: 0
+        Delay: 0
+        OverrideClipLength: 0
+      - Clip: {fileID: 8300000, guid: 2cd9febef09014e05a2fbe7aeb4f3bac, type: 1}
+        Volume: 1
+        Probability: 1
+        PitchShift: 0
+        Pan2D: 0
+        RandomPitch: 0
+        RandomVolume: 0
+        Delay: 0
+        OverrideClipLength: 0
+    _volume: 1
+  musicPlaylist:
+  - Bassoon
+  - Flute
+  - Windbells
+  - Oboe
+  loopPlaylist: 1
+  shufflePlaylist: 0
+  crossfadePlaylist: 0
+  delayBetweenPlaylistTracks: 1
+  _audioDisabled: 0
+  _volume: 1
+--- !u!1002 &11400001
+EditorExtensionImpl:
+  serializedVersion: 6
+--- !u!114 &11400002
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26422d816db31455088f3c77408d928b, type: 1}
+  m_Name: 
+  crossFadeTime: 2
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 100000}
+  m_IsPrefabParent: 1
+  m_IsExploded: 1
+--- !u!1002 &100100001
+EditorExtensionImpl:
+  serializedVersion: 6

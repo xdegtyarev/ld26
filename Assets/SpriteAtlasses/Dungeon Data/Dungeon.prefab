@@ -1,0 +1,999 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400000}
+  - 114: {fileID: 11400000}
+  m_Layer: 0
+  m_Name: Dungeon
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d546f34a90531a14eaba82a43b05b86b, type: 3}
+  m_Name: 
+  version: 3
+  materialIdsValid: 1
+  needMaterialInstance: 0
+  spriteDefinitions:
+  - name: CheckpointActivated
+    boundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 8, y: 16, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 8, y: 16, z: 0}
+    texelSize: {x: 1, y: 1}
+    positions:
+    - {x: -4, y: -8, z: 0}
+    - {x: 4, y: -8, z: 0}
+    - {x: -4, y: 8, z: 0}
+    - {x: 4, y: 8, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .937500954, y: 4.88281273e-07}
+    - {x: .937500954, y: .00390576175}
+    - {x: .953124046, y: 4.88281273e-07}
+    - {x: .953124046, y: .00390576175}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 126aa7daed8ca4bd384c2032fdec0050, type: 2}
+    materialId: 0
+    sourceTextureGUID: 176bed82d448d41a88514c130b40bda4
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: CheckpointDeactivated
+    boundsData:
+    - {x: 0, y: -6, z: 0}
+    - {x: 8, y: 4, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 8, y: 16, z: 0}
+    texelSize: {x: 1, y: 1}
+    positions:
+    - {x: -4, y: -8, z: 0}
+    - {x: 4, y: -8, z: 0}
+    - {x: -4, y: -4, z: 0}
+    - {x: 4, y: -4, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .953125954, y: 4.88281273e-07}
+    - {x: .960936546, y: 4.88281273e-07}
+    - {x: .953125954, y: .00195263675}
+    - {x: .960936546, y: .00195263675}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 126aa7daed8ca4bd384c2032fdec0050, type: 2}
+    materialId: 0
+    sourceTextureGUID: 66d2a9e89554d48769a35e74e6d56625
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: dungeon3
+    boundsData:
+    - {x: 160, y: 120, z: 0}
+    - {x: 320, y: 240, z: 0}
+    untrimmedBoundsData:
+    - {x: 160, y: 120, z: 0}
+    - {x: 320, y: 240, z: 0}
+    texelSize: {x: 1, y: 1}
+    positions:
+    - {x: 0, y: 0, z: 0}
+    - {x: 320, y: 0, z: 0}
+    - {x: 0, y: 240, z: 0}
+    - {x: 320, y: 240, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 9.76562546e-07, y: 4.88281273e-07}
+    - {x: .312499017, y: 4.88281273e-07}
+    - {x: 9.76562546e-07, y: .117187008}
+    - {x: .312499017, y: .117187008}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 126aa7daed8ca4bd384c2032fdec0050, type: 2}
+    materialId: 0
+    sourceTextureGUID: 57674734a49184e75a056e23026be259
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: dungeon5
+    boundsData:
+    - {x: 160, y: 120, z: 0}
+    - {x: 320, y: 240, z: 0}
+    untrimmedBoundsData:
+    - {x: 160, y: 120, z: 0}
+    - {x: 320, y: 240, z: 0}
+    texelSize: {x: 1, y: 1}
+    positions:
+    - {x: 0, y: 0, z: 0}
+    - {x: 320, y: 0, z: 0}
+    - {x: 0, y: 240, z: 0}
+    - {x: 320, y: 240, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .312500983, y: 4.88281273e-07}
+    - {x: .624999046, y: 4.88281273e-07}
+    - {x: .312500983, y: .117187008}
+    - {x: .624999046, y: .117187008}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 126aa7daed8ca4bd384c2032fdec0050, type: 2}
+    materialId: 0
+    sourceTextureGUID: 3527a80f002ff46ffa355907f8c9e79c
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: dungeon4
+    boundsData:
+    - {x: 160, y: 120, z: 0}
+    - {x: 320, y: 240, z: 0}
+    untrimmedBoundsData:
+    - {x: 160, y: 120, z: 0}
+    - {x: 320, y: 240, z: 0}
+    texelSize: {x: 1, y: 1}
+    positions:
+    - {x: 0, y: 0, z: 0}
+    - {x: 320, y: 0, z: 0}
+    - {x: 0, y: 240, z: 0}
+    - {x: 320, y: 240, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .625000954, y: 4.88281273e-07}
+    - {x: .937499046, y: 4.88281273e-07}
+    - {x: .625000954, y: .117187008}
+    - {x: .937499046, y: .117187008}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 126aa7daed8ca4bd384c2032fdec0050, type: 2}
+    materialId: 0
+    sourceTextureGUID: 6967cd34a82574704ba70b866dccc0ac
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: dungeon6
+    boundsData:
+    - {x: 160, y: 120, z: 0}
+    - {x: 320, y: 240, z: 0}
+    untrimmedBoundsData:
+    - {x: 160, y: 120, z: 0}
+    - {x: 320, y: 240, z: 0}
+    texelSize: {x: 1, y: 1}
+    positions:
+    - {x: 0, y: 0, z: 0}
+    - {x: 320, y: 0, z: 0}
+    - {x: 0, y: 240, z: 0}
+    - {x: 320, y: 240, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 9.76562546e-07, y: .117187992}
+    - {x: .312499017, y: .117187992}
+    - {x: 9.76562546e-07, y: .234374508}
+    - {x: .312499017, y: .234374508}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 126aa7daed8ca4bd384c2032fdec0050, type: 2}
+    materialId: 0
+    sourceTextureGUID: 75cad423118544ce79455c047b74bf27
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: dungeon2
+    boundsData:
+    - {x: 160, y: 120, z: 0}
+    - {x: 320, y: 240, z: 0}
+    untrimmedBoundsData:
+    - {x: 160, y: 120, z: 0}
+    - {x: 320, y: 240, z: 0}
+    texelSize: {x: 1, y: 1}
+    positions:
+    - {x: 0, y: 0, z: 0}
+    - {x: 320, y: 0, z: 0}
+    - {x: 0, y: 240, z: 0}
+    - {x: 320, y: 240, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .312500983, y: .117187992}
+    - {x: .624999046, y: .117187992}
+    - {x: .312500983, y: .234374508}
+    - {x: .624999046, y: .234374508}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 126aa7daed8ca4bd384c2032fdec0050, type: 2}
+    materialId: 0
+    sourceTextureGUID: 46b02bec4ee5e453095dd94a19e2ef35
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: dungeon7
+    boundsData:
+    - {x: 160, y: 120, z: 0}
+    - {x: 320, y: 240, z: 0}
+    untrimmedBoundsData:
+    - {x: 160, y: 120, z: 0}
+    - {x: 320, y: 240, z: 0}
+    texelSize: {x: 1, y: 1}
+    positions:
+    - {x: 0, y: 0, z: 0}
+    - {x: 320, y: 0, z: 0}
+    - {x: 0, y: 240, z: 0}
+    - {x: 320, y: 240, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .625000954, y: .117187992}
+    - {x: .937499046, y: .117187992}
+    - {x: .625000954, y: .234374508}
+    - {x: .937499046, y: .234374508}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 126aa7daed8ca4bd384c2032fdec0050, type: 2}
+    materialId: 0
+    sourceTextureGUID: 836ae13a9eb594c4ba9e0c543a4799b3
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: dungeon1
+    boundsData:
+    - {x: 160, y: 120, z: 0}
+    - {x: 320, y: 240, z: 0}
+    untrimmedBoundsData:
+    - {x: 160, y: 120, z: 0}
+    - {x: 320, y: 240, z: 0}
+    texelSize: {x: 1, y: 1}
+    positions:
+    - {x: 0, y: 0, z: 0}
+    - {x: 320, y: 0, z: 0}
+    - {x: 0, y: 240, z: 0}
+    - {x: 320, y: 240, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 9.76562546e-07, y: .234375492}
+    - {x: .312499017, y: .234375492}
+    - {x: 9.76562546e-07, y: .351562023}
+    - {x: .312499017, y: .351562023}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 126aa7daed8ca4bd384c2032fdec0050, type: 2}
+    materialId: 0
+    sourceTextureGUID: cd8221583044549e38dc18722d08e2a0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: dungeon8
+    boundsData:
+    - {x: 160, y: 120, z: 0}
+    - {x: 320, y: 240, z: 0}
+    untrimmedBoundsData:
+    - {x: 160, y: 120, z: 0}
+    - {x: 320, y: 240, z: 0}
+    texelSize: {x: 1, y: 1}
+    positions:
+    - {x: 0, y: 0, z: 0}
+    - {x: 320, y: 0, z: 0}
+    - {x: 0, y: 240, z: 0}
+    - {x: 320, y: 240, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .312500983, y: .234375492}
+    - {x: .624999046, y: .234375492}
+    - {x: .312500983, y: .351562023}
+    - {x: .624999046, y: .351562023}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 126aa7daed8ca4bd384c2032fdec0050, type: 2}
+    materialId: 0
+    sourceTextureGUID: 953cb1349411941bcab8cdb5afdb7635
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: dungeon10
+    boundsData:
+    - {x: 160, y: 120, z: 0}
+    - {x: 320, y: 240, z: 0}
+    untrimmedBoundsData:
+    - {x: 160, y: 120, z: 0}
+    - {x: 320, y: 240, z: 0}
+    texelSize: {x: 1, y: 1}
+    positions:
+    - {x: 0, y: 0, z: 0}
+    - {x: 320, y: 0, z: 0}
+    - {x: 0, y: 240, z: 0}
+    - {x: 320, y: 240, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .625000954, y: .234375492}
+    - {x: .937499046, y: .234375492}
+    - {x: .625000954, y: .351562023}
+    - {x: .937499046, y: .351562023}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 126aa7daed8ca4bd384c2032fdec0050, type: 2}
+    materialId: 0
+    sourceTextureGUID: cc1580fedc6d246ff9e6f4562d1bab4f
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: dungeon9
+    boundsData:
+    - {x: 160, y: 120, z: 0}
+    - {x: 320, y: 240, z: 0}
+    untrimmedBoundsData:
+    - {x: 160, y: 120, z: 0}
+    - {x: 320, y: 240, z: 0}
+    texelSize: {x: 1, y: 1}
+    positions:
+    - {x: 0, y: 0, z: 0}
+    - {x: 320, y: 0, z: 0}
+    - {x: 0, y: 240, z: 0}
+    - {x: 320, y: 240, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 9.76562546e-07, y: .351562977}
+    - {x: .312499017, y: .351562977}
+    - {x: 9.76562546e-07, y: .468749523}
+    - {x: .312499017, y: .468749523}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 126aa7daed8ca4bd384c2032fdec0050, type: 2}
+    materialId: 0
+    sourceTextureGUID: d2363d34473e14ae1aa83da17bccd168
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: dungeon11
+    boundsData:
+    - {x: 160, y: 120, z: 0}
+    - {x: 320, y: 240, z: 0}
+    untrimmedBoundsData:
+    - {x: 160, y: 120, z: 0}
+    - {x: 320, y: 240, z: 0}
+    texelSize: {x: 1, y: 1}
+    positions:
+    - {x: 0, y: 0, z: 0}
+    - {x: 320, y: 0, z: 0}
+    - {x: 0, y: 240, z: 0}
+    - {x: 320, y: 240, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .312500983, y: .351562977}
+    - {x: .624999046, y: .351562977}
+    - {x: .312500983, y: .468749523}
+    - {x: .624999046, y: .468749523}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 126aa7daed8ca4bd384c2032fdec0050, type: 2}
+    materialId: 0
+    sourceTextureGUID: 32c71e0850b5b4d109ad664e81a63fe1
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: dungeon17
+    boundsData:
+    - {x: 160, y: 120, z: 0}
+    - {x: 320, y: 240, z: 0}
+    untrimmedBoundsData:
+    - {x: 160, y: 120, z: 0}
+    - {x: 320, y: 240, z: 0}
+    texelSize: {x: 1, y: 1}
+    positions:
+    - {x: 0, y: 0, z: 0}
+    - {x: 320, y: 0, z: 0}
+    - {x: 0, y: 240, z: 0}
+    - {x: 320, y: 240, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .625000954, y: .351562977}
+    - {x: .937499046, y: .351562977}
+    - {x: .625000954, y: .468749523}
+    - {x: .937499046, y: .468749523}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 126aa7daed8ca4bd384c2032fdec0050, type: 2}
+    materialId: 0
+    sourceTextureGUID: 12118b6b9cc9641ad95d2315f11ca11c
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: dungeon13
+    boundsData:
+    - {x: 160, y: 120, z: 0}
+    - {x: 320, y: 240, z: 0}
+    untrimmedBoundsData:
+    - {x: 160, y: 120, z: 0}
+    - {x: 320, y: 240, z: 0}
+    texelSize: {x: 1, y: 1}
+    positions:
+    - {x: 0, y: 0, z: 0}
+    - {x: 320, y: 0, z: 0}
+    - {x: 0, y: 240, z: 0}
+    - {x: 320, y: 240, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 9.76562546e-07, y: .468750477}
+    - {x: .312499017, y: .468750477}
+    - {x: 9.76562546e-07, y: .585937023}
+    - {x: .312499017, y: .585937023}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 126aa7daed8ca4bd384c2032fdec0050, type: 2}
+    materialId: 0
+    sourceTextureGUID: 13ee2fb7aa234475b8776494ecb80db3
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: dungeon14
+    boundsData:
+    - {x: 160, y: 120, z: 0}
+    - {x: 320, y: 240, z: 0}
+    untrimmedBoundsData:
+    - {x: 160, y: 120, z: 0}
+    - {x: 320, y: 240, z: 0}
+    texelSize: {x: 1, y: 1}
+    positions:
+    - {x: 0, y: 0, z: 0}
+    - {x: 320, y: 0, z: 0}
+    - {x: 0, y: 240, z: 0}
+    - {x: 320, y: 240, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .312500983, y: .468750477}
+    - {x: .624999046, y: .468750477}
+    - {x: .312500983, y: .585937023}
+    - {x: .624999046, y: .585937023}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 126aa7daed8ca4bd384c2032fdec0050, type: 2}
+    materialId: 0
+    sourceTextureGUID: 319c016221bd4478e82760f6b476d577
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: dungeon18
+    boundsData:
+    - {x: 160, y: 120, z: 0}
+    - {x: 320, y: 240, z: 0}
+    untrimmedBoundsData:
+    - {x: 160, y: 120, z: 0}
+    - {x: 320, y: 240, z: 0}
+    texelSize: {x: 1, y: 1}
+    positions:
+    - {x: 0, y: 0, z: 0}
+    - {x: 320, y: 0, z: 0}
+    - {x: 0, y: 240, z: 0}
+    - {x: 320, y: 240, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .625000954, y: .468750477}
+    - {x: .937499046, y: .468750477}
+    - {x: .625000954, y: .585937023}
+    - {x: .937499046, y: .585937023}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 126aa7daed8ca4bd384c2032fdec0050, type: 2}
+    materialId: 0
+    sourceTextureGUID: 40a467384ff2e4eb2b3ce12ec45266f6
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: dungeon12
+    boundsData:
+    - {x: 160, y: 120, z: 0}
+    - {x: 320, y: 240, z: 0}
+    untrimmedBoundsData:
+    - {x: 160, y: 120, z: 0}
+    - {x: 320, y: 240, z: 0}
+    texelSize: {x: 1, y: 1}
+    positions:
+    - {x: 0, y: 0, z: 0}
+    - {x: 320, y: 0, z: 0}
+    - {x: 0, y: 240, z: 0}
+    - {x: 320, y: 240, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 9.76562546e-07, y: .585937977}
+    - {x: 9.76562546e-07, y: .742187023}
+    - {x: .234374017, y: .585937977}
+    - {x: .234374017, y: .742187023}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 126aa7daed8ca4bd384c2032fdec0050, type: 2}
+    materialId: 0
+    sourceTextureGUID: b34bd4a99146e45579dccfe768f6a776
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: dungeon15
+    boundsData:
+    - {x: 160, y: 120, z: 0}
+    - {x: 320, y: 240, z: 0}
+    untrimmedBoundsData:
+    - {x: 160, y: 120, z: 0}
+    - {x: 320, y: 240, z: 0}
+    texelSize: {x: 1, y: 1}
+    positions:
+    - {x: 0, y: 0, z: 0}
+    - {x: 320, y: 0, z: 0}
+    - {x: 0, y: 240, z: 0}
+    - {x: 320, y: 240, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 9.76562546e-07, y: .742187977}
+    - {x: 9.76562546e-07, y: .898437023}
+    - {x: .234374017, y: .742187977}
+    - {x: .234374017, y: .898437023}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 126aa7daed8ca4bd384c2032fdec0050, type: 2}
+    materialId: 0
+    sourceTextureGUID: ca00e85b3d2a54ebc81c427bbc1ab994
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: dungeon16
+    boundsData:
+    - {x: 160, y: 120, z: 0}
+    - {x: 320, y: 240, z: 0}
+    untrimmedBoundsData:
+    - {x: 160, y: 120, z: 0}
+    - {x: 320, y: 240, z: 0}
+    texelSize: {x: 1, y: 1}
+    positions:
+    - {x: 0, y: 0, z: 0}
+    - {x: 320, y: 0, z: 0}
+    - {x: 0, y: 240, z: 0}
+    - {x: 320, y: 240, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .234375983, y: .585937977}
+    - {x: .546874046, y: .585937977}
+    - {x: .234375983, y: .703124523}
+    - {x: .546874046, y: .703124523}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 126aa7daed8ca4bd384c2032fdec0050, type: 2}
+    materialId: 0
+    sourceTextureGUID: eedd6d208230645a8a104a3fee8c76bd
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: dungeon19
+    boundsData:
+    - {x: 160, y: 120, z: 0}
+    - {x: 320, y: 240, z: 0}
+    untrimmedBoundsData:
+    - {x: 160, y: 120, z: 0}
+    - {x: 320, y: 240, z: 0}
+    texelSize: {x: 1, y: 1}
+    positions:
+    - {x: 0, y: 0, z: 0}
+    - {x: 320, y: 0, z: 0}
+    - {x: 0, y: 240, z: 0}
+    - {x: 320, y: 240, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .546875954, y: .585937977}
+    - {x: .859374046, y: .585937977}
+    - {x: .546875954, y: .703124523}
+    - {x: .859374046, y: .703124523}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 126aa7daed8ca4bd384c2032fdec0050, type: 2}
+    materialId: 0
+    sourceTextureGUID: 4dbf787c8493b4821b91b4033c035049
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: dungeon22
+    boundsData:
+    - {x: 160, y: 120, z: 0}
+    - {x: 320, y: 240, z: 0}
+    untrimmedBoundsData:
+    - {x: 160, y: 120, z: 0}
+    - {x: 320, y: 240, z: 0}
+    texelSize: {x: 1, y: 1}
+    positions:
+    - {x: 0, y: 0, z: 0}
+    - {x: 320, y: 0, z: 0}
+    - {x: 0, y: 240, z: 0}
+    - {x: 320, y: 240, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .234375983, y: .703125477}
+    - {x: .234375983, y: .859374523}
+    - {x: .468749017, y: .703125477}
+    - {x: .468749017, y: .859374523}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 126aa7daed8ca4bd384c2032fdec0050, type: 2}
+    materialId: 0
+    sourceTextureGUID: 87b532540d7d34d32bda5b1ede4b5e36
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: dungeon23
+    boundsData:
+    - {x: 160, y: 120, z: 0}
+    - {x: 320, y: 240, z: 0}
+    untrimmedBoundsData:
+    - {x: 160, y: 120, z: 0}
+    - {x: 320, y: 240, z: 0}
+    texelSize: {x: 1, y: 1}
+    positions:
+    - {x: 0, y: 0, z: 0}
+    - {x: 320, y: 0, z: 0}
+    - {x: 0, y: 240, z: 0}
+    - {x: 320, y: 240, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .234375983, y: .859375477}
+    - {x: .546874046, y: .859375477}
+    - {x: .234375983, y: .976562023}
+    - {x: .546874046, y: .976562023}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 126aa7daed8ca4bd384c2032fdec0050, type: 2}
+    materialId: 0
+    sourceTextureGUID: eabbf507ae6d3446a918852d50ac3241
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: dungeon21
+    boundsData:
+    - {x: 160, y: 120, z: 0}
+    - {x: 320, y: 240, z: 0}
+    untrimmedBoundsData:
+    - {x: 160, y: 120, z: 0}
+    - {x: 320, y: 240, z: 0}
+    texelSize: {x: 1, y: 1}
+    positions:
+    - {x: 0, y: 0, z: 0}
+    - {x: 320, y: 0, z: 0}
+    - {x: 0, y: 240, z: 0}
+    - {x: 320, y: 240, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .468750983, y: .703125477}
+    - {x: .468750983, y: .859374523}
+    - {x: .703124046, y: .703125477}
+    - {x: .703124046, y: .859374523}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 126aa7daed8ca4bd384c2032fdec0050, type: 2}
+    materialId: 0
+    sourceTextureGUID: f806835e566a7456eaa23eb26a7f44c5
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: dungeon20
+    boundsData:
+    - {x: 160, y: 120, z: 0}
+    - {x: 320, y: 240, z: 0}
+    untrimmedBoundsData:
+    - {x: 160, y: 120, z: 0}
+    - {x: 320, y: 240, z: 0}
+    texelSize: {x: 1, y: 1}
+    positions:
+    - {x: 0, y: 0, z: 0}
+    - {x: 320, y: 0, z: 0}
+    - {x: 0, y: 240, z: 0}
+    - {x: 320, y: 240, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .546875954, y: .859375477}
+    - {x: .859374046, y: .859375477}
+    - {x: .546875954, y: .976562023}
+    - {x: .859374046, y: .976562023}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 126aa7daed8ca4bd384c2032fdec0050, type: 2}
+    materialId: 0
+    sourceTextureGUID: ffb44b9b28d8a42fb9a18521241db5f6
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  premultipliedAlpha: 0
+  material: {fileID: 0}
+  materials:
+  - {fileID: 2100000, guid: 126aa7daed8ca4bd384c2032fdec0050, type: 2}
+  textures:
+  - {fileID: 2800000, guid: 8bc457eae0e9a40a9a2f41d061753175, type: 3}
+  allowMultipleAtlases: 0
+  spriteCollectionGUID: 06c25793c3c0d4e88ab2ff0cd1c54d44
+  spriteCollectionName: Dungeon
+  assetName: 
+  loadable: 0
+  invOrthoSize: 1
+  halfTargetHeight: 1
+  buildKey: 307088045
+  dataGuid: f97072bc6aebf417c9363a24f55189b5
+  managedSpriteCollection: 0
+  hasPlatformData: 0
+  spriteCollectionPlatforms: []
+  spriteCollectionPlatformGUIDs: []
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 100000}
+  m_IsPrefabParent: 1
+  m_IsExploded: 1

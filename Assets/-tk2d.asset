@@ -1,0 +1,247 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41cb500cf0f58e74f9a52a8af931edde, type: 3}
+  m_Name: -tk2d
+  version: 3
+  spriteAnimationIndex:
+  - assetGUID: 731d323f64f2f4af2ab26e9eb5a8a53e
+    dataGUID: 
+    managed: 0
+    loadable: 0
+  - assetGUID: 40924423bcc7b432b83f402538ef15b4
+    dataGUID: 
+    managed: 0
+    loadable: 0
+  fontIndex:
+  - assetGUID: 063b15d80dbb4604d890600a64c79cf8
+    dataGUID: e7a6b09a73c6b2b4f8060096ddbd3b5e
+    managed: 0
+    loadable: 0
+  - assetGUID: 5b9fac241be038041b70ac7e84cd6151
+    dataGUID: 3082bbcb45b417041963b6b8562266c1
+    managed: 0
+    loadable: 0
+  - assetGUID: db60ffa92fa16ea478fc7ad4f595a0e6
+    dataGUID: 44e006873ca04f741b2ac3ba5dec92ad
+    managed: 0
+    loadable: 0
+  spriteCollectionIndex:
+  - name: Dungeon
+    spriteCollectionGUID: 06c25793c3c0d4e88ab2ff0cd1c54d44
+    spriteCollectionDataGUID: f97072bc6aebf417c9363a24f55189b5
+    spriteNames:
+    - CheckpointActivated
+    - CheckpointDeactivated
+    - dungeon3
+    - dungeon5
+    - dungeon4
+    - dungeon6
+    - dungeon2
+    - dungeon7
+    - dungeon1
+    - dungeon8
+    - dungeon10
+    - dungeon9
+    - dungeon11
+    - dungeon17
+    - dungeon13
+    - dungeon14
+    - dungeon18
+    - dungeon12
+    - dungeon15
+    - dungeon16
+    - dungeon19
+    - dungeon22
+    - dungeon23
+    - dungeon21
+    - dungeon20
+    spriteTextureGUIDs:
+    - 176bed82d448d41a88514c130b40bda4
+    - 66d2a9e89554d48769a35e74e6d56625
+    - 57674734a49184e75a056e23026be259
+    - 3527a80f002ff46ffa355907f8c9e79c
+    - 6967cd34a82574704ba70b866dccc0ac
+    - 75cad423118544ce79455c047b74bf27
+    - 46b02bec4ee5e453095dd94a19e2ef35
+    - 836ae13a9eb594c4ba9e0c543a4799b3
+    - cd8221583044549e38dc18722d08e2a0
+    - 953cb1349411941bcab8cdb5afdb7635
+    - cc1580fedc6d246ff9e6f4562d1bab4f
+    - d2363d34473e14ae1aa83da17bccd168
+    - 32c71e0850b5b4d109ad664e81a63fe1
+    - 12118b6b9cc9641ad95d2315f11ca11c
+    - 13ee2fb7aa234475b8776494ecb80db3
+    - 319c016221bd4478e82760f6b476d577
+    - 40a467384ff2e4eb2b3ce12ec45266f6
+    - b34bd4a99146e45579dccfe768f6a776
+    - ca00e85b3d2a54ebc81c427bbc1ab994
+    - eedd6d208230645a8a104a3fee8c76bd
+    - 4dbf787c8493b4821b91b4033c035049
+    - 87b532540d7d34d32bda5b1ede4b5e36
+    - eabbf507ae6d3446a918852d50ac3241
+    - f806835e566a7456eaa23eb26a7f44c5
+    - ffb44b9b28d8a42fb9a18521241db5f6
+    spriteTextureTimeStamps:
+    - 1367182314
+    - 1367182303
+    - 1367278816
+    - 1367278814
+    - 1367278817
+    - 1367278813
+    - 1367278815
+    - 1367281674
+    - 1367278815
+    - 1367281674
+    - 1367281674
+    - 1367281674
+    - 1367281674
+    - 1367281673
+    - 1367281674
+    - 1367281674
+    - 1367281673
+    - 1367281675
+    - 1367281674
+    - 1367281674
+    - 1367281675
+    - 1367281673
+    - 1367203898
+    - 1367281675
+    - 1367281673
+    managedSpriteCollection: 0
+    loadable: 0
+    assetName: 
+    version: 3
+  - name: MultiplyFX
+    spriteCollectionGUID: 90ef4da2f2fb24ffdb8c511e763ac602
+    spriteCollectionDataGUID: 996c5916fe0374558b94b86c39d27b26
+    spriteNames:
+    - fx
+    - fx2
+    - fx1
+    spriteTextureGUIDs:
+    - ff4caec7f15574429aed91bb1c991507
+    - 26dffb5ca9f80422493bed4d7af384f3
+    - f379e3e95c89b44039be076df865ba0f
+    spriteTextureTimeStamps:
+    - 1367185750
+    - 1367185750
+    - 1367185750
+    managedSpriteCollection: 0
+    loadable: 0
+    assetName: 
+    version: 3
+  - name: Creatures
+    spriteCollectionGUID: 3c0c2f39b49be435dab0661a5e5adcbd
+    spriteCollectionDataGUID: 3f13bec32a56c48f89b216507dd11beb
+    spriteNames:
+    - Red2
+    - Blue2
+    - Red1
+    - bat1
+    - bat2
+    - Blue1
+    - Spider2
+    - Spider1
+    - worm1
+    - worm2
+    - run2
+    - run1
+    - run6
+    - stand
+    - run4
+    - run3
+    - run7
+    - run5
+    - rope
+    - centipede1
+    - frog1
+    - centipede2
+    - frog2
+    - rope-item
+    - potato
+    spriteTextureGUIDs:
+    - e8db7e84665884824a2a9d9d2a8a7268
+    - 20d602d7c470f4cc0ac259ef115d0a63
+    - e7b33b48b99e14b98bbe08873cd26826
+    - dddd94c93d1c643b4bf5407efce99216
+    - 69bf643b72f244f079d78c45c9f42b09
+    - f2df946d2aa9741bda30fd42ac904f14
+    - 11017c25824714a6bb5090a9547cf63f
+    - 27c257062811044baba66e101025da13
+    - 4eadb78e0dc20446ba1ad31bc0fe6e84
+    - e4351c33fbf344b1c8340c1752dc2ba6
+    - 06a23bfda20d24f428dec48d456b17e6
+    - 17dc1ca07dfee4b4cabe8b315299fcfc
+    - 3f7f2f2eff58143d792197e5f1ea7beb
+    - 5e1be0686e1834a7c97f6b80f648894f
+    - 5fee83fa8aa6d487284022680d038460
+    - 7c2f25b9b626446cab141844d4a52113
+    - dd16fcd17d8744b279b2f91b06c0b319
+    - f059b6fb1954d411d813d3b8b5996062
+    - 38384bbdad269481a918b192f43650e8
+    - 2a0281c340af54aa9916e091d55e4a33
+    - 6f3fe9599be9d45df87cb2d5c6ac0257
+    - c2bf68c5be5b4484d9c44d757e655372
+    - df702f4b8a83c4ef596df9cc4b7be60e
+    - f4aa575a7a3484c07b4be525a1f4ef6f
+    - 9e5469ad71e2244dd906eea8c22fce3c
+    spriteTextureTimeStamps:
+    - 1367177295
+    - 1367177262
+    - 1367177277
+    - 1367283164
+    - 1367283164
+    - 1367177233
+    - 1367176789
+    - 1367176774
+    - 1367176150
+    - 1367176163
+    - 1367185750
+    - 1367185750
+    - 1367185750
+    - 1367185750
+    - 1367185750
+    - 1367185750
+    - 1367185750
+    - 1367185750
+    - 1367185750
+    - 1367188221
+    - 1367188273
+    - 1367188239
+    - 1367188285
+    - 1367201685
+    - 1367203898
+    managedSpriteCollection: 0
+    loadable: 0
+    assetName: 
+    version: 3
+  - name: Texts
+    spriteCollectionGUID: bac59eb40e40944219700c915fbbca68
+    spriteCollectionDataGUID: 6a837b4e77c5b447293c97e0e88c1ee7
+    spriteNames:
+    - Arrows
+    - Rope
+    - titles
+    - Potato
+    spriteTextureGUIDs:
+    - db0b77f4f158548b598bb99450ea9127
+    - 4a27bd373237e43939f2197dc8946c0f
+    - 0d850e4b1399e4f128d44554fd72c47a
+    - 3707696eb9ec044e1bdac53bbf9fe0a9
+    spriteTextureTimeStamps:
+    - 1367268568
+    - 1367268612
+    - 1367276035
+    - 1367276877
+    managedSpriteCollection: 0
+    loadable: 0
+    assetName: 
+    version: 3
